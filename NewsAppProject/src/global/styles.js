@@ -7,10 +7,21 @@ export const colors = {
   grey5: '#e1e8ee',
   CardComment: '#86939e',
   cardbackground: 'white',
-  statusbar: "#ff8c52",
-  headerText: "white",
+  statusbar: '#ff8c52',
+  headerText: 'white',
 };
 
 export const parameters = {
   headerHeight: 50,
 };
+
+export const container = {
+  container: {
+    flex: 1,
+  },
+}
+
+export const Fonts = {
+  FontsRegular: 'Prompt-Regular',
+  FontsBold: 'Prompt-Bold',
+}

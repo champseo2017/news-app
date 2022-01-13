@@ -1,21 +1,21 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {View, Text, StyleSheet, StatusBar} from 'react-native';
-import Header from './src/components/Header';
 import {colors} from './src/global/styles';
+import {SignInScreen} from './src/screens';
 
 const App = () => {
   return (
     <Fragment>
       <SafeAreaView style={{flex: 0, backgroundColor: colors.buttons}} />
-        <View style={styles.container}>
-          <StatusBar
-            barStyle="light-content"
-            backgroundColor={colors.statusbar}
-          />
-          <Header title="MY ACCOUNT" />
-        </View>
-        <SafeAreaView style={{flex: 0, backgroundColor: colors.buttons}} />
+      <View style={styles.container}>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={colors.statusbar}
+        />
+        <SignInScreen />
+      </View>
+      <SafeAreaView style={{flex: 0, backgroundColor: colors.buttons}} />
     </Fragment>
   );
 };
